@@ -1,0 +1,155 @@
+:root{
+    --primary-color:#fafafa;
+    --secondary-color:#1a1a1a;
+    --tertiary-color:#4a4a4a;
+    --quaternary-color:#b87e51;
+    --font-family:-apple-system, BlinkMacSystemFont "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -55px;
+}
+
+.navbar {
+    position: relative; 
+    top: -25px; 
+    width: 98%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.navbar a:hover{
+    color: var(--quaternary-color);
+    transition: 0.3s ease-in-out;
+    font-weight: bolder;
+}
+
+.about-section{
+    color: var(--secondary-color);
+}
+
+.about-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    text-align: center;
+}
+
+.meet-the-team{
+    color: var(--secondary-color);
+}
+
+.meet-the-team h1,p{
+    text-align: center;
+}
+
+.meet-the-team h1{
+    margin-top: 35px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background: var(--primary-color);
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--quaternary-color);
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-weight: bold;
+    color: #555;
+}
+
+footer{
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+.footer-logo img{
+    max-width: 120px;
+}
+  
+.footer-contact, .footer-social{
+    max-width: 300px;
+}
+  
+.footer-social a{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+  
+.footer-social a:hover{
+    color: var(--tertiary-color);
+}
+  
+.footer-bottom{
+    margin-top: 20px;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 10px;
+}

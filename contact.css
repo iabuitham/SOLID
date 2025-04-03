@@ -1,0 +1,116 @@
+:root{
+    --primary-color:#fafafa;
+    --secondary-color:#1a1a1a;
+    --tertiary-color:#4a4a4a;
+    --quaternary-color:#b87e51;
+    --font-family:-apple-system, BlinkMacSystemFont "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -55px;
+}
+
+.navbar {
+    position: relative; 
+    top: -25px; 
+    width: 98%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.navbar a:hover{
+    color: var(--quaternary-color);
+    transition: 0.3s ease-in-out;
+    font-weight: bolder;
+}
+
+.contact{
+    color: var(--secondary-color);
+    text-align: center;
+    margin-left: 50px;
+}
+
+.contact img{
+    width: 1%;
+    height: auto;
+}
+
+.contact a{
+text-decoration: none;
+}
+
+.contact a::before{
+    color: var(--secondary-color);
+}
+
+.contact a:visited{
+    color: var(--quaternary-color);
+
+}
+
+.location{
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+footer{
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+.footer-logo img{
+    max-width: 120px;
+}
+  
+.footer-contact, .footer-social{
+    max-width: 300px;
+}
+  
+.footer-social a{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+  
+.footer-social a:hover{
+    color: var(--tertiary-color);
+}
+  
+.footer-bottom{
+    margin-top: 20px;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 10px;
+}
